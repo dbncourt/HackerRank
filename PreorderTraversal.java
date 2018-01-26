@@ -1,11 +1,7 @@
 void preOrder(Node root) {
-    preOrderTraverse(root);
-}
-
-void preOrderTraverse(Node node){
-    if(node != null){
-        System.out.print(node.data + " ");
-        preOrderTraverse(node.left);
-        preOrderTraverse(node.right);
+    if(root != null){
+        System.out.print(root.data + " ");
+        preOrder(root.left);
+        preOrder(root.right);
     }
 }
